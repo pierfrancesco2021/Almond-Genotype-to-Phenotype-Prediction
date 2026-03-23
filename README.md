@@ -19,50 +19,28 @@
 
 ## 🧠 Project Overview
 
-This repository contains the source code and environment specifications used for the analysis presented in the manuscript.  
-The goal of the study was to identify explainable microbiome-derived biomarkers for colorectal cancer risk prediction using 16S rRNA data and XAI (SHAP-based) analysis.
+This project implements a Machine Learning (ML) and Explainable AI (XAI) pipeline to predict almond phenotypic traits from genomic data (SNPs). Unlike standard "black-box" models, this framework uses SHAP (SHapley Additive exPlanations) to identify the specific genetic markers (SNPs) that drive the predictions, facilitating more informed plant breeding decisions.
 
-The analysis includes:
-- Preprocessing of microbiome and metadata
-- ML model training (XGBoost, Random Forest, CatBoost)
-- Global and local explanation using SHAP
-- Embedding and clustering of adenoma patients
-- SHAP interaction network analysis
+Key Features:
+- Genomic Preprocessing: Handling of VCF files and variant filtering using scikit-allel.
+
+- Feature Selection: Dimensionality reduction via Mutual Information (MI) to identify the most relevant SNPs.
+
+- Predictive Modeling: Optimized Random Forest (RF) regression with hyperparameter tuning.
+
 
 ---
-
 
 ## ⚙️ Environment Setup
 
-The analysis was conducted in Python on the following system:
+The analysis was conducted using Python 3.11.
 
-- **Operating System:** macOS 15.6  
-- **Python Version:** 3.11.12
+--- 
 
-To reproduce the computational environment used in the study, we provide a Conda environment file.
-
-### 🛠️ Installation
-
-Make sure you have [Anaconda](https://www.anaconda.com/download) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed. Then:
-
-```bash
-# Clone the repository
-git clone https://github.com/pierfrancesco2021/Personalized-Colorectal-Cancer-Risk-Assessment.git
-cd CRC_microbiome_XAI
-
-# Create environment from YAML
-conda env create -f environment.yml
-
-# Activate the environment
-conda activate microbiome-crc
-```
----
-
-### 📊 SHAP Interaction Network Visualization
-
-The notebook `notebooks/shapInteraction_risk.ipynb` computes and saves:
-- **Node matrix** (`nodes.csv`)
-- **Link matrix** (`edges.csv`)
-
-These files represent the SHAP-based interaction network and can be directly imported into [Gephi](https://gephi.org/) for interactive visualization and exploration.
-
+### Methodology Summary
+The workflow implemented in the provided code follows these stages:
+1)Variant Filtering: SNPs with low variance or high missingness are pruned.
+2)MI-based Ranking: SNPs are ranked by their Mutual Information score relative to the target trait.
+3)Model Optimization: RandomizedSearchCV is used to find the best configuration for the Random Forest Regressor.
+4)Performance Metrics: The model is evaluated using $R^2$, Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE) via Repeated K-Fold Cross-Validation.
+5)Interpretation: SHAP values are calculated to visualize the impact of specific SNPs on the predicted phenotype.

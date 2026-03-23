@@ -1,7 +1,7 @@
 # Almond-Genotype-to-Phenotype-Prediction
 [![DOI](https://zenodo.org/badge/1029577614.svg)](https://doi.org/10.5281/zenodo.16778479)
 
-![Graphical Abstract](flowchart_high_res 2.png)
+![Graphical Abstract](flowchart_high_res_2.png)
 
 ## 📄 Paper Information
 

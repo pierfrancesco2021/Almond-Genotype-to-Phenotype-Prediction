@@ -39,8 +39,8 @@ The analysis was conducted using Python 3.11.
 
 ### Methodology Summary
 The workflow implemented in the provided code follows these stages:
-1)Variant Filtering: SNPs with low variance or high missingness are pruned.
-2)MI-based Ranking: SNPs are ranked by their Mutual Information score relative to the target trait.
-3)Model Optimization: RandomizedSearchCV is used to find the best configuration for the Random Forest Regressor.
-4)Performance Metrics: The model is evaluated using $R^2$, Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE) via Repeated K-Fold Cross-Validation.
-5)Interpretation: SHAP values are calculated to visualize the impact of specific SNPs on the predicted phenotype.
+- Variant Filtering: SNPs with low variance or high missingness are pruned.
+- MI-based Ranking: SNPs are ranked by their Mutual Information score relative to the target trait.
+- Model Optimization: RandomizedSearchCV is used to find the best configuration for the Random Forest Regressor.
+- Performance Metrics: The model is evaluated using $R^2$, Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE) via Repeated K-Fold Cross-Validation.
+- Interpretation: SHAP values are calculated to visualize the impact of specific SNPs on the predicted phenotype.

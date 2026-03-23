@@ -1,4 +1,5 @@
 # Almond-Genotype-to-Phenotype-Prediction
+[![DOI](https://zenodo.org/badge/1189450563.svg)](https://doi.org/10.5281/zenodo.19186417)
 
 
 ![Graphical Abstract](flowchart_high_res_2.png)

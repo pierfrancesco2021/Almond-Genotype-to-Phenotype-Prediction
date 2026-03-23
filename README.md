@@ -12,7 +12,7 @@
 **Published:** 09 September 9, 2024
 
 <p align="center">
-<img src="cover_frontiers.png" alt="Frontiers in Plant Science" width="300"/>
+<img src="cover_frontiers.png" alt="Frontiers in Plant Science" width="600"/>
 </p>
 
 ---

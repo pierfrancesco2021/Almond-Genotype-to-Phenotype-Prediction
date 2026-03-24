@@ -9,7 +9,7 @@
 **Title:** Explainable artificial intelligence for genotype-to-phenotype prediction in plant breeding: a case study with a dataset from an almond germplasm collection 
 **Authors:** Pierfrancesco Novielli, Donato Romano, Stefano Pavan, Pasquale Losciale, Anna Maria Stellacci, Domenico Diacono, Roberto Bellotti, Sabina Tangaro  
 **Journal:** *Frontiers in Plant Science*, Volume 15 - 2024  
-**DOI:** [10.3389/fpls.2024.1434229]([https://doi.org/10.3389/fpls.2024.1434229])  
+**DOI:** [https://doi.org/10.3389/fpls.2024.1434229](https://doi.org/10.3389/fpls.2024.1434229)
 **Published:** 09 September 9, 2024
 
 <p align="center">
